@@ -1,0 +1,85 @@
+@font-face {
+src: url("https://file.garden/aq2WUGqUG9xq7I-e/.personal/.font/.pixel/miraero");
+font-family: font;
+}
+
+* {
+ box-sizing: border-box;
+ font-family: font;
+}
+
+html {
+min-height: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+overflow-x: clip;
+overflow-y: auto;
+background: transparent url("https://file.garden/aq2WUGqUG9xq7I-e/.bg/.full/110") center / cover no-repeat fixed;
+}
+
+.parent {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1rem;
+ padding: .5rem .75rem;
+ width: 27rem;
+ height: 20rem;
+ margin: 5rem auto;
+ position: relative;
+ background: white;
+}
+
+.parent div {
+flex: 1;
+}
+
+#crt-lines {
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: 100;
+position: absolute;
+pointer-events: none;
+background: url("https://file.garden/aq2WUGqUG9xq7I-e/.personal/.fluffle/.leisure/1");
+background-size: .4rem auto;
+mix-blend-mode: overlay;
+opacity: 0.4;
+animation: moveDownAnimation 150s linear infinite;
+}
+
+#darken {
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+position: absolute;
+pointer-events: none;
+background: rgba(0, 0, 0, 0.25);
+}
+
+#vignette {
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: 150;
+position: absolute;
+pointer-events: none;
+background: url("https://file.garden/aq2WUGqUG9xq7I-e/.personal/.fluffle/.leisure/2");
+background-size: 100% 100%;
+mix-blend-mode: overlay;
+opacity: 0.6;
+}
+@keyframes moveDownAnimation {
+100% {
+background-position-y: 100%;
+}
+}
