@@ -1,4 +1,4 @@
-# lovage
+# lounge
 
 A Pen created on CodePen.
 
